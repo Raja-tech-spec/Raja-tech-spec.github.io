@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talal Ahmed | AI & Mobile Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2d3e50;
+      --secondary: #007acc;
+      --light: #f7f9fc;
+      --dark: #333;
+      --white: #fff;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      margin: 0;
+      padding: 0;
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 3rem 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid var(--white);
+      margin-bottom: 1rem;
+    }
+    
+    h1 {
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .social-links {
+      margin-top: 1rem;
+    }
+    
+    .social-links a {
+      color: var(--white);
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: #aadfff;
+      transform: translateY(-3px);
+    }
+    
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    h2 {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background-color: var(--secondary);
+    }
+    
+    h3 {
+      color: var(--secondary);
+      margin-top: 0;
+    }
+    
+    .project {
+      background: var(--white);
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 5px solid var(--primary);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 0 5px 5px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .project-icon {
+      font-size: 1.5rem;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    a {
+      color: var(--secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    .skill-category {
+      flex: 1;
+      min-width: 250px;
+      background: var(--white);
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+    
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--secondary);
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--secondary);
+    }
+    
+    .timeline-date {
+      font-style: italic;
+      color: #666;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: var(--primary);
+      color: var(--white);
+      margin-top: 40px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .tagline {
+        font-size: 1rem;
+      }
+      
+      section {
+        padding: 0 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <!-- Add your profile picture if available -->
+    <!-- <img src="profile.jpg" alt="Talal Ahmed" class="profile-pic"> -->
+    <h1>Talal Ahmed</h1>
+    <p class="tagline">Artificial Intelligence Undergraduate | Kotlin & Python Developer</p>
+    <p>
+      <a href="mailto:talal.ahmed0168@gmail.com" style="color:#aadfff;">
+        <i class="fas fa-envelope"></i> talal.ahmed0168@gmail.com
+      </a> | 
+      <i class="fas fa-phone"></i> +92-312-5331668
+    </p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/talal-ahmed-4285ta0168" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Raja-spec-tech" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="#" title="Resume">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    Passionate and detail-oriented Bachelor of Science in Artificial Intelligence student at Barani Institute of Information Technology (Affiliated with PMAS-Arid Agriculture University), expected to graduate in 2026. I specialize in machine learning, mobile app development, and cybersecurity with a strong foundation in programming and data analysis.
+  </p>
+  <p>
+    Currently working on a cognitive load assessment app using Android (Kotlin), and a mini-project on spam, ham, and phishing detection using Python and adversarial learning. Eager to apply theoretical knowledge to real-world problems and gain hands-on experience in AI-driven technologies.
+  </p>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3><span class="project-icon">📱</span> Cognitive Load Assessment App</h3>
+    <p><strong>Final Year Project | Android (Kotlin)</strong></p>
+    <ul>
+      <li>Developing a mobile app to measure and analyze cognitive load using EEG data</li>
+      <li>Includes real-time data collection, processing, and CSV export functionality</li>
+      <li>Implements student/teacher/admin roles for comprehensive user management</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <h3><span class="project-icon">📧</span> Spam, Ham & Phishing Detection</h3>
+    <p><strong>Mini Project | Python + Adversarial Machine Learning</strong></p>
+    <ul>
+      <li>Detects and classifies email content as spam, ham, or phishing using machine learning models</li>
+      <li>Includes adversarial input generation for testing model robustness</li>
+      <li>Implements TF-IDF vectorization and ensemble methods (Random Forest, XGBoost)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Programming</h3>
+      <ul>
+        <li>Python (Advanced)</li>
+        <li>C++ (Intermediate)</li>
+        <li>Java (Intermediate)</li>
+        <li>Kotlin (Advanced)</li>
+      </ul>
+    </div>
+    
+    <div class="skill-category">
+      <h3>Development</h3>
+      <ul>
+        <li>Android App Development</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>SQL Databases</li>
+        <li>Git Version Control</li>
+      </ul>
+    </div>
+    
+    <div class="skill-category">
+      <h3>AI & Data</h3>
+      <ul>
+        <li>Machine Learning</li>
+        <li>Data Analysis</li>
+        <li>Natural Language Processing</li>
+        <li>Adversarial Learning</li>
+      </ul>
+    </div>
+    
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <ul>
+        <li>Android Studio</li>
+        <li>VS Code</li>
+        <li>Adobe Photoshop</li>
+        <li>Microsoft Office Suite</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Python Instructor & Front Desk Assistant</h3>
+      <p class="timeline-date">Covvit Institute – RWP, Pakistan</p>
+      <ul>
+        <li>Taught Python programming to beginners through engaging YouTube tutorials, reaching a wide audience of aspiring developers</li>
+        <li>Created lesson plans, course materials, and coding exercises to reinforce key concepts for over 100 students</li>
+        <li>Delivered live coding sessions, explaining programming concepts in an easy-to-understand manner</li>
+        <li>Managed the front desk, handling student inquiries, admissions, and supporting institute operations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Bachelor of Science in Artificial Intelligence (BSAI)</h3>
+      <p class="timeline-date">Expected Graduation: Feb 2026</p>
+      <p>Barani Institute of Information Technology (Affiliated with PMAS-Arid Agriculture University) Rawalpindi, Pakistan</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <ul>
+    <li><strong>Python Programming Course</strong> – EC-Council</li>
+    <li><strong>Graphic Designing Course</strong> – PFTP (Pakistan Freelancing Training Program)</li>
+    <li><strong>Cybersecurity Course</strong> – [Institute Name]</li>
+    <li><strong>Basic Office Automation Course</strong> – Covered Windows, MS Word, Excel, PowerPoint, Access, and InPage</li>
+    <li><strong>Certificate of Appreciation</strong> – For outstanding management skills during workshop on "Integrating Probability and Statistics with Python"</li>
+    <li><strong>Certificate of Attendance</strong> – Participated in workshop on Artificial Intelligence, Machine Learning, and Data Science</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <ul>
+    <li><strong>English</strong> (Fluent)</li>
+    <li><strong>Urdu</strong> (Native)</li>
+    <li><strong>Punjabi</strong> (Conversational)</li>
+  </ul>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Talal Ahmed | Portfolio Page
+</footer>
+
+<script>
+  // Update copyright year automatically
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
