@@ -200,6 +200,22 @@
       margin-top: 40px;
     }
     
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    
+    .tech-item {
+      background-color: #e1f0fa;
+      color: var(--primary);
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    
     @media (max-width: 768px) {
       h1 {
         font-size: 2rem;
@@ -254,7 +270,32 @@
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
+
+  <div class="project">
+    <h3><span class="project-icon">🤖</span> AI Resume-Job Matcher</h3>
+    <p><strong>Python, NLP, Streamlit | Notch Developers</strong></p>
+    <div class="tech-stack">
+      <span class="tech-item">Python</span>
+      <span class="tech-item">PyMuPDF</span>
+      <span class="tech-item">SentenceTransformers</span>
+      <span class="tech-item">scikit-learn</span>
+      <span class="tech-item">Streamlit</span>
+      <span class="tech-item">NLP</span>
+    </div>
+    <ul>
+      <li>Developed an AI-powered resume analysis and job matching application</li>
+      <li>Extracts text from PDF resumes using PyMuPDF and processes content</li>
+      <li>Identifies skills and education using NLP techniques and regex patterns</li>
+      <li>Uses sentence embeddings (all-MiniLM-L6-v2 model) for semantic matching</li>
+      <li>Implements cosine similarity to match resumes against job database</li>
+      <li>Features caching system for model and embeddings to improve performance</li>
+      <li>Built interactive UI with Streamlit for easy resume upload and analysis</li>
+    </ul>
+    <p>
+      <strong>Key Features:</strong> PDF parsing, skill extraction, education detection, semantic matching, caching system, interactive dashboard
+    </p>
+  </div>
 
   <div class="project">
     <h3><span class="project-icon">📱</span> Cognitive Load Assessment App</h3>
@@ -307,6 +348,8 @@
         <li>Data Analysis</li>
         <li>Natural Language Processing</li>
         <li>Adversarial Learning</li>
+        <li>Sentence Embeddings</li>
+        <li>Semantic Similarity</li>
       </ul>
     </div>
     
@@ -315,6 +358,7 @@
       <ul>
         <li>Android Studio</li>
         <li>VS Code</li>
+        <li>Streamlit</li>
         <li>Adobe Photoshop</li>
         <li>Microsoft Office Suite</li>
       </ul>
@@ -333,6 +377,17 @@
         <li>Created lesson plans, course materials, and coding exercises to reinforce key concepts for over 100 students</li>
         <li>Delivered live coding sessions, explaining programming concepts in an easy-to-understand manner</li>
         <li>Managed the front desk, handling student inquiries, admissions, and supporting institute operations</li>
+      </ul>
+    </div>
+    
+    <div class="timeline-item">
+      <h3>AI Developer</h3>
+      <p class="timeline-date">Notch Developers</p>
+      <ul>
+        <li>Developed AI-powered applications including the Resume-Job Matcher system</li>
+        <li>Implemented NLP techniques for text processing and semantic analysis</li>
+        <li>Optimized performance with caching mechanisms for embeddings and models</li>
+        <li>Designed intuitive user interfaces for AI applications</li>
       </ul>
     </div>
   </div>
